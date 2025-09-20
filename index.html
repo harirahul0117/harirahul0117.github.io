@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasham Hari Rahul — Cyber Resilience Architect</title>
+  <style>
+    /* Full-screen centered video (works for both videos) */
+    video.bg-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.3) contrast(1.2);
+    }
+
+    body {
+      font-family: "Fira Code", monospace;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header {
+      padding: 40px 10px;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+      background: rgba(0,0,50,0.5);
+      animation: neonGlow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes neonGlow {
+      from { text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff; }
+      to { text-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff; }
+    }
+
+    section {
+      background-color: rgba(0, 0, 50, 0.7);
+      max-width: 850px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #0ff;
+      box-shadow: 0 0 15px #00ffff;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ff69b4;
+      padding-bottom: 5px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    }
+
+    .project {
+      border: 1px solid #ff69b4;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #ff69b4;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: rgba(0,0,100,0.5);
+    }
+
+    .project:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #ff69b4, 0 0 30px #00ffff;
+    }
+
+    a {
+      color: #ff69b4;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #00ffff;
+    }
+
+    footer {
+      margin-top: 20px;
+      color: #ff69b4;
+      font-size: 14px;
+      text-shadow: 0 0 10px #ff69b4, 0 0 20px #00ffff;
+    }
+
+    /* Gradient text for skills */
+    .skills p {
+      background: linear-gradient(90deg, #00ffff, #ff00ff, #ff69b4, #00ff7f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- First video (intro) -->
+  <video id="intro-video" autoplay muted playsinline class="bg-video">
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+
+  <!-- Second video (looping background, hidden initially) -->
+  <video id="loop-video" muted playsinline loop class="bg-video" style="display:none;">
+    <source src="video2.mp4" type="video/mp4">
+  </video>
+
+  <header>
+    <h1>Pasham Hari Rahul — Cyber Resilience Architect</h1>
+    <p>💻 Cybersecurity Student | SOC & Offensive Security Intern |</p>
+    <p><a href="mailto:pashamharirahul384@gmail.com">pashamharirahul384@gmail.com</a> | 
+       <a href="https://github.com/harirahul0117">GitHub</a> | 
+       <a href="https://www.linkedin.com/in/pashamharirahul">LinkedIn</a></p>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>Detail-oriented cybersecurity graduate with hands-on experience in network security, ethical hacking, and cyber threat analysis. Skilled in identifying vulnerabilities, implementing security measures, and supporting secure IT environments.</p>
+  </section>
+
+ <section class="skills">
+  <h2>Skills</h2>
+
+  <h3>Cybersecurity & Ethical Hacking</h3>
+  <p>Penetration Testing, Vulnerability Assessment (VAPT), Offensive Security / Red Teaming, Web Application Security (SQL Injection, XSS, LFI/RFI, Clickjacking, Broken Access Control, Sensitive Data Exposure), Mobile & Network Security (Android exploitation, Firewall & IDS/IPS evasion), Denial of Service (DoS/DDoS) simulation & mitigation, Cyber Threat Analysis, Digital Forensics (FTK Imager, evidence handling, hashing, chain of custody), Security Incident Monitoring (SOC), CVSS Scoring & Vulnerability Reporting, Secure SDLC</p>
+
+  <h3>Tools & Platforms</h3>
+  <p>Burp Suite, Nmap, Metasploit, Nessus Essentials, SQLMap, Gobuster / DirBuster, Maltego, Searchsploit, OpenVAS, Wireshark</p>
+
+  <h3>Web Development (Frontend)</h3>
+  <p>HTML, CSS, JavaScript, Bootstrap, Responsive Design, UI/UX Optimization</p>
+
+  <h3>Other Technical Proficiencies</h3>
+  <p>Security workflow documentation, Risk analysis & prioritization, Lab & Project-Based Practical Experience in Cybersecurity</p>
+</section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Advanced Web Vulnerability Scanner</h3>
+      <p>Developed a Python-based scanner with payload injection engine, CVE mapping, Tkinter GUI, PDF reporting, and ML-based risk prioritization.</p>
+    </div>
+
+    <div class="project">
+      <h3>Penetration Testing on TestPHP (OWASP Lab)</h3>
+      <p>Performed SQL Injection, XSS, Clickjacking, and brute-force attacks on vulnerable web app. Delivered detailed CVSS-rated report & mitigation
